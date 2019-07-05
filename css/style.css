@@ -163,7 +163,7 @@ body {
 #drum {
   max-width: 838px;
   width: 100%;
-  transition: 0.5s;
+  transition: 7s ease-in-out;
 }
 
 @keyframes move1 {

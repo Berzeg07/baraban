@@ -160,11 +160,21 @@ body {
     animation: move8 7s forwards ease-in-out;
 }
 
+
+
 #drum {
     max-width: 838px;
     width: 100%;
-    transition: 0.5s;
+    transition: 7s ease-in-out;
 }
+
+// .move1{
+//     transform: rotate(1980deg);
+// }
+//
+// .mov1_end{
+//     transform: rotate(1980deg);
+// }
 
 @keyframes move1 {
     from {

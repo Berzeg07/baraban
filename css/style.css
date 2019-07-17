@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -15,50 +14,6 @@
 
 button {
   cursor: pointer;
-}
-
-body {
-  font-family: "HelveticaNeueCyr";
-}
-
-@font-face {
-  font-family: "SuedtirolPro-Regular";
-  src: url("../fonts/SuedtirolPro-Regular/SuedtirolPro-Regular.eot");
-  src: local("☺"), url("../fonts/SuedtirolPro-Regular/SuedtirolPro-Regular.woff") format("woff"), url("../fonts/SuedtirolPro-Regular/SuedtirolPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Raleway-Medium";
-  src: url("../fonts/Raleway-Medium/Raleway-Medium.eot");
-  src: local("☺"), url("../fonts/Raleway-Medium/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium/Raleway-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.eot");
-  src: local("☺"), url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot");
-  src: local("☺"), url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot");
-  src: local("☺"), url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
 }
 
 @media (min-width: 1200px) {
@@ -79,6 +34,19 @@ body {
   display: inline-block;
   position: relative;
   text-align: center;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .drum-item:first-child .drum-img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .drum-item:first-child .drum-img {
+    width: unset;
+  }
 }
 
 .drum-item:first-child .drum-img img {
@@ -89,7 +57,7 @@ body {
 .drum-item:first-child .drum-img:after {
   content: '';
   position: absolute;
-  right: 17px;
+  right: -8px;
   top: 50%;
   transform: translateY(-50%);
   width: 36px;
@@ -98,27 +66,9 @@ body {
   background-size: contain;
 }
 
-@media (min-width: 400px) {
-  .drum-item:first-child .drum-img:after {
-    right: 32px;
-  }
-}
-
-@media (min-width: 500px) {
-  .drum-item:first-child .drum-img:after {
-    right: 45px;
-  }
-}
-
-@media (min-width: 600px) {
-  .drum-item:first-child .drum-img:after {
-    right: 56px;
-  }
-}
-
 @media (min-width: 768px) {
   .drum-item:first-child .drum-img:after {
-    right: 74px;
+    right: -7px;
     width: 56px;
   }
 }
@@ -128,114 +78,10 @@ body {
   right: 0;
 }
 
-.drum-animate_1 {
-  animation: move1 7s forwards ease-in-out;
-}
-
-.drum-animate_2 {
-  animation: move2 7s forwards ease-in-out;
-}
-
-.drum-animate_3 {
-  animation: move3 7s forwards ease-in-out;
-}
-
-.drum-animate_4 {
-  animation: move4 7s forwards ease-in-out;
-}
-
-.drum-animate_5 {
-  animation: move5 7s forwards ease-in-out;
-}
-
-.drum-animate_6 {
-  animation: move6 7s forwards ease-in-out;
-}
-
-.drum-animate_7 {
-  animation: move7 7s forwards ease-in-out;
-}
-
-.drum-animate_8 {
-  animation: move8 7s forwards ease-in-out;
-}
-
 #drum {
   max-width: 838px;
   width: 100%;
   transition: 7s ease-in-out;
-}
-
-@keyframes move1 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1980deg);
-  }
-}
-
-@keyframes move2 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2025deg);
-  }
-}
-
-@keyframes move3 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2070deg);
-  }
-}
-
-@keyframes move4 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2115deg);
-  }
-}
-
-@keyframes move5 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2160deg);
-  }
-}
-
-@keyframes move6 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2205deg);
-  }
-}
-
-@keyframes move7 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2250deg);
-  }
-}
-
-@keyframes move8 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(2295deg);
-  }
 }
 
 .stock {
